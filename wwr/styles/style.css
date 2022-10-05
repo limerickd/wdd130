@@ -5,8 +5,105 @@
 
 nav a {
     text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-#hero-msg h1 {
+#hero-image {
+    width: 100%;
+}
+
+.icon {
+    width: 80px;
+}
+
+#hero-message h1, #hero-message h4 {
     text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background-color: aliceblue;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #00afb9;
+}
+
+nav a:hover {
+    background-color: #fed9b7;
+    color: #0081a7;
+}
+
+.book, .join {
+    background-color: #00afb9;
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+}
+
+.book:hover, .join:hover {
+    background-color: azure;
+    color: black;
+}
+
+.msg {
+    background-color: #fed9b7;
+}
+
+footer {
+    background-color: #fed9b7;
+}
+
+.home-title {
+    color: black;
+}
+
+h4 {
+    color: #0081a7;
+}
+
+.msg h2 {
+    color: rgb(68, 139, 200);
+}
+
+.msg p {
+    color: black;
+}
+
+footer h3 {
+    color: black;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: black;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 80px;
 }
