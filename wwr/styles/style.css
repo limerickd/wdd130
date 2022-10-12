@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Source+Sans+Pro&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,6 +9,7 @@ nav a {
     text-align: center;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-image {
@@ -15,6 +18,7 @@ nav a {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-message h1, #hero-message h4 {
@@ -29,6 +33,14 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+/* I added ".mountains" because the result wasn't similar to the capture provided by the teacher. You will probably have to delete this change later, but for now it looks like the assignment should*/
+.mountains {
+    margin: 100px 0 200px;
+}
+
 #background {
     height: 725px;
     background-color: aliceblue;
@@ -36,6 +48,14 @@ main section {
 
 body {
     background-color: #ffffff;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0;
 }
 
 header {
@@ -52,6 +72,18 @@ nav a:hover {
     color: azure;
     text-decoration: none;
     text-align: center;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
 
 .book:hover, .join:hover {
@@ -61,14 +93,21 @@ nav a:hover {
 
 .msg {
     background-color: #fed9b7;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
     background-color: #fed9b7;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 .home-title {
     color: black;
+    font-family: "Comfortaa", Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -77,10 +116,13 @@ h4 {
 
 .msg h2 {
     color: rgb(68, 139, 200);
+    font-family: "Comfortaa", Helvetica, sans-serif;
 }
 
 .msg p {
     color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer h3 {
@@ -104,6 +146,14 @@ footer p a:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .logo {
     width: 80px;
+}
+
+#logo_link{
+    padding-top: 5px;
 }
