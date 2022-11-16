@@ -231,7 +231,7 @@ footer .social img {
 
 
 
-form {
+.mytab-form {
     /* Center the form on the page */
     margin: 0 auto;
     width: 1100px;
@@ -295,4 +295,34 @@ form {
     }
     .moveDown {
         margin-top: 3em;
+    }
+
+
+
+
+    /* CSS for contact us */
+
+    #contact-image {
+        width: 90%;
+    }
+
+    .contactus-form {
+        /* Center the form on the page */
+        margin: 0 auto;
+        width: 500px;
+        /* Form outline */
+        padding: 0.5em;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+      }
+
+    .text-box {
+        font: 0.7em "Open Sans", Helvetica, sans-serif;
+  
+    /* Uniform text field size */
+    width: 500px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
     }

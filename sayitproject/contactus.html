@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Say it| My Tab</title>
+    <title>Say it| Contact Us</title>
 </head>
 <body>
     <div id="content">
@@ -20,48 +20,48 @@
             
         </header>
        
-        <main class="mytabcontent">
+        <main class="content">
 
 
 
 
 
-            <div id="tab-image">
-                <div id="image-box"><img id="megaphone-image" src="images/shouting.png" alt="person screaming"></div>
+            <div id="hero">
+                <div id="hero-box"><img id="contact-image" src="images/nothear1.png" alt="person not listening"></div>
             </div>
     
-            <section id="mytab-message">
-                <h1 class="home-title">Just HTML it!</h1>
-                <p class="mytab-msg">Hey there fellow Sayer! Welcome to your tab. Here is where you can manage your presets on the messages you leave. Remember this is tied to your cache only, since you are not required to make an account. So, you can create some presets like colors, text size, fonts, and even link an image from another website, so you can use it as a footer or whatever your imagination tells you.
-                    Keep in mind that we don’t store the resources directly in our website. Everything is used via links. If an element you used gets taken down from its source page, it will not longer appear here. Also, changes you make on your tab are client based, the sever won’t save anything on our side.
-                    I wish we could do more, but we would have to make an offering to the internet gods first. Either that or force you to create an account, which then will surely be hacked and your secret message for your boss, will no longer be so secret.
+            <section id="hero-message">
+                <h1 class="home-title">TL;DR!</h1>
+                <p class="mytab-msg">There are other times when you just want to call our attention, we are here for you! It’s ok you don’t need to shout in this section. Shoot us a message and or suggestion about what we can do to help you venting your frustrations with the world around.
+                    Also don’t forget to add your email so we can contact you back. Don’t worry we won’t share this with anyone else. Remember, we are all about ‘no strings attached’
+                    Word of advice, you’ll know when its implemented, or as people say, “It’ll be done when it’s done”. That’s how we roll here, Sayer.                    
                 </p>
 
                 <div id="feedback"></div>
 
-                <form class="mytab-form" action="/my-handling-form-page" method="post">
+                <form class="contactus-form" action="/my-handling-form-page" method="post">
                     <ul>                  
-                    <li>
-                        <!-- <label for="msg">Message:</label> -->
-                        <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                    <!-- <li class="button">
-                        <button type="submit">Send your message</button>
-                    </li> -->
-
-
-
+                        <li>
+                            <label for="name">Name:</label>
+                            <input class="text-box" type="text" id="name" name="user_name" />
+                          </li>
+                          <li>
+                            <label for="mail">E-mail:</label>
+                            <input class="text-box" type="email" id="mail" name="user_email" />
+                          </li>
+                          <li>
+                            <label for="msg">Message:</label>
+                            <textarea class="text-box" id="msg" name="user_message"></textarea>
+                          </li>
                     <li class="mytab-box"> <!-- I added the class="button-box" here, because it was stated in the CSS but nowhere to be found in the HTML. The only element that wasn't aligned was the "Book Now!"-->
                         <!-- <a class="say" href="contactus.html">SAVE IT</a> -->
-                        <button class="say" type="submit">SAVE IT</button>
+                        <button class="say" type="submit">KEEP IT</button>
                     </li>
 
 
 
                     </ul>
                 </form>
-
-                <p class="mytab-msg">Maybe once technology advances, or you learn to keep your passwords secure and not use “Steve123” as your main choice of secret keywords. Remember: We don’t condone the use of graphic material and or other harmful elements (we will call the cops on you if you post something illegal). You can always vent your frustration through the power of words! And sometimes, an image can help your point get across, but nothing says “I can’t stand your crap” like SAYING IT yourself! Have fun and rage one Sayer!</p>
                 
                 <!-- <div class="button-box">                    
                     <button class="say" type="submit">SAVE IT</button>
@@ -105,8 +105,7 @@
             // stop the form from doing the default action.
             e.preventDefault();
             // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            // feedbackElement.innerHTML = 'Hello '+ formElement.user_message.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            feedbackElement.innerHTML = 'Preset Saved, Keep on Saying it!';
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Glad to see you have lots of things to share with us. We will get back to you sometime!';
             // make the feedback element visible.
             feedbackElement.style.display = "block";
             // add a class to move everything down so our message doesn't cover it.
