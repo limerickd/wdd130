@@ -202,9 +202,7 @@ footer .social img {
 }
 
 #mytab-message h1, #mytab-message p {
-    text-align: center;
-    /* grid-column: 2/3;
-    grid-row: 1/2; */
+    text-align: center;    
     color: #ffffff;
     font-family: "Open Sans", Helvetica, sans-serif;    
 }
