@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say it| My Tab</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a href="index.html" id="logo_link"><img class="logo" src="images/logo1.png" alt="Say it Logo"></a>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="mytab.html">MY TAB</a>
+                <a href="contactus.html">CONTACT US</a>
+                <a href="site-plan.html">SITE PLAN</a>
+            </nav>
+            
+        </header>
+       
+        <main class="mytabcontent">
+
+
+
+
+
+            <div id="tab-image">
+                <div id="image-box"><img id="megaphone-image" src="images/shout2.jpg" alt="person screaming"></div>
+            </div>
+    
+            <section id="mytab-message">
+                <h1 class="home-title">Just HTML it!</h1>
+                <p class="mytab-msg">Hey there fellow Sayer! Welcome to your tab. Here is where you can manage your presets on the messages you leave. Remember this is tied to your cache only, since you are not required to make an account. So, you can create some presets like colors, text size, fonts, and even link an image from another website, so you can use it as a footer or whatever your imagination tells you.
+                    Keep in mind that we don’t store the resources directly in our website. Everything is used via links. If an element you used gets taken down from its source page, it will not longer appear here. Also, changes you make on your tab are client based, the sever won’t save anything on our side.
+                    I wish we could do more, but we would have to make an offering to the internet gods first. Either that or force you to create an account, which then will surely be hacked and your secret message for your boss, will no longer be so secret.
+                </p>
+
+                <div id="feedback"></div>
+
+                <form action="/my-handling-form-page" method="post">
+                    <ul>                  
+                    <li>
+                        <!-- <label for="msg">Message:</label> -->
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <!-- <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li> -->
+
+
+
+                    <li class="mytab-box"> <!-- I added the class="button-box" here, because it was stated in the CSS but nowhere to be found in the HTML. The only element that wasn't aligned was the "Book Now!"-->
+                        <!-- <a class="say" href="contactus.html">SAVE IT</a> -->
+                        <button class="say" type="submit">SAVE IT</button>
+                    </li>
+
+
+
+                    </ul>
+                </form>
+
+                <p class="mytab-msg">Maybe once technology advances, or you learn to keep your passwords secure and not use “Steve123” as your main choice of secret keywords. Remember: We don’t condone the use of graphic material and or other harmful elements (we will call the cops on you if you post something illegal). You can always vent your frustration through the power of words! And sometimes, an image can help your point get across, but nothing says “I can’t stand your crap” like SAYING IT yourself! Have fun and rage one Sayer!</p>
+                
+                <!-- <div class="button-box">                    
+                    <button class="say" type="submit">SAVE IT</button>
+                </div> -->
+    
+            </section>
+
+            
+
+            
+
+        </main>
+
+        <footer>
+            <p>Say it! &copy; 2022 - Erick Puma</p>
+            <p><a href="site-plan.html">Site Plan</a></p>            
+
+            <div class="Social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            // feedbackElement.innerHTML = 'Hello '+ formElement.user_message.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.innerHTML = 'Preset Saved, Keep on Saying it!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+
+    
+</body>
+
+</html>
