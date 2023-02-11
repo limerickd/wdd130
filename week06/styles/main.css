@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Open+Sans&display=swap');
+
+body{
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #333;
+  max-width: 1600px;
+  margin: 0 auto;
+  
+  
+}
+
+
+header {
+  background-color: #DB1B22;
+  display: grid;
+  grid-template-columns: 150px auto;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+nav a:hover {
+  background-color: #2D2D2A;
+  color: #F7FFF7;
+}
+
+nav a {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 35px;
+  
+}
+
+nav {
+  display: flex;    
+  justify-content: space-evenly;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+}
+
+#trivia{
+  font-weight: 600;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  justify-content: space-around;  
+  
+}
+
+#submit{
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: #297;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+
+  background-color: #DB1B22;
+  color: #F7FFF7;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 30px 50px;
+  margin-top: 50px;
+  border-radius: 35px;
+  font-family: "Nunito", Helvetica, sans-serif;
+  border: none;
+  grid-column: 3/4;
+  grid-row: 4/5; 
+}
+#submit:hover{
+  background-color: #3a8;
+}
+
+#results{
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+  background-color: rgba(102, 102, 102, 0.234);  
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;  
+  margin-bottom: 20px;
+  grid-column: 3/4;
+  grid-row: 5/6;
+  margin-bottom: 150px;;
+}
+
+footer {
+  background-color: #a5a5a5;
+  color: #000000;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 5px 5px;
+  margin-top: -5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;    
+}
+
+footer a {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 35px;
+}
+
+footer a:hover{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  /* padding: 35px; */
+}
